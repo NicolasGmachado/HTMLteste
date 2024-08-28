@@ -25,7 +25,7 @@ class SistemaDeVendas:
         for venda in self.vendas:
             vendasPorDia[venda.data] += venda.valor
         return vendasPorDia
-   
+    
     def vendasSemanais(self):
         vendasPorSemana = defaultdict(float)
         for venda in self.vendas:
@@ -140,10 +140,5 @@ def main():
         else:
             print("Opção inválida. Tente novamente.")
 
-# Função de início do programa
 def inicio():
     main()
-
-# Ponto de entrada do programa
-if __name__ == "__main__":
-    inicio()
